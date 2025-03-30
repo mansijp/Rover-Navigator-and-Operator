@@ -1,0 +1,269 @@
+>>>>> Beginning path traversal 8 <<<<<
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+
+MINE DISARMED, PIN SAVED.
+Pin: 1539094, Serial Num: we0ufx9bpx
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Eliminated
+>>>>> Ending path traversal 8 <<<<<
+

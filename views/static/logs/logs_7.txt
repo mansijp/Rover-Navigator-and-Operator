@@ -1,0 +1,21 @@
+>>>>> Beginning path traversal 7 <<<<<
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Eliminated
+>>>>> Ending path traversal 7 <<<<<
+

@@ -1,0 +1,16 @@
+----------------- Beginning path traversal 6 -----------------
+Command executed: M
+Rover Status: Finished
+----
+Command executed: M
+Rover Status: Eliminated
+------------------ Ending path traversal 6 ------------------
+
+----------------- Beginning path traversal 6 -----------------
+Command executed: M
+Rover Status: Finished
+----
+Command executed: M
+Rover Status: Eliminated
+------------------ Ending path traversal 6 ------------------
+

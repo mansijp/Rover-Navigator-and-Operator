@@ -1,0 +1,66 @@
+>>>>> Beginning path traversal 5 <<<<<
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Eliminated
+>>>>> Ending path traversal 5 <<<<<
+
+>>>>> Beginning path traversal 5 <<<<<
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Eliminated
+>>>>> Ending path traversal 5 <<<<<
+

@@ -1,0 +1,181 @@
+>>>>> Beginning path traversal 2 <<<<<
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+
+MINE DISARMED, PIN SAVED.
+Pin: 30957302, Serial Num: mjh2vzflp7
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: D
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: L
+Rover Status: Finished
+
+
+Command executed: R
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Finished
+>>>>> Ending path traversal 2 <<<<<
+

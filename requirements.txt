@@ -1,0 +1,8 @@
+pip
+fastapi
+uvicorn[standard]
+pydantic
+pymongo
+requests
+python-multipart
+jinja2

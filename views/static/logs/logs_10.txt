@@ -1,0 +1,9 @@
+>>>>> Beginning path traversal 10 <<<<<
+Command executed: M
+Rover Status: Finished
+
+
+Command executed: M
+Rover Status: Eliminated
+>>>>> Ending path traversal 10 <<<<<
+

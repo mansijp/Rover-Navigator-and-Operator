@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rover Operator Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center mb-4 pt-2">Rover Operator Dashboard</h1>
+        <h5 class="text-center mb-4 pb-2 pt-1">[COE892 Lab 4-5] <b>Created by: Mansi Patel</b></h5>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" id="dashboardTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="map-tab" data-bs-toggle="tab" href="#map" role="tab" aria-controls="map" aria-selected="true">Map Controls</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="mines-tab" data-bs-toggle="tab" href="#mines" role="tab" aria-controls="mines" aria-selected="false">Mine Controls</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="rovers-tab" data-bs-toggle="tab" href="#rovers" role="tab" aria-controls="rovers" aria-selected="false">Rover Controls</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="map" role="tabpanel" aria-labelledby="map-tab">
+                <h2 class="text-center">Map Controls</h2>
+                <div class="row">
+                    <!-- Map Section (Left side) -->
+                    <div class="col-md-6 d-flex flex-column align-items-center">
+                        <button class="btn btn-primary" onclick="getMap()">View Map</button>
+                        <div id="map-section" class="mt-6" style="height: auto; text-align: center;"></div>
+                    </div>
+                    
+                    <!-- Update Map Form (Right side) -->
+                    <div class="col-md-6 d-flex flex-column align-items-center">
+                        <form id="updateMapForm" class="mt-3" style="width: 50%; text-align: center;">
+                            <input type="number" id="mapRows" class="form-control mb-2" placeholder="Enter number of rows" required>
+                            <input type="number" id="mapCols" class="form-control mb-2" placeholder="Enter number of columns" required>
+                            <button class="btn btn-warning mt-2" onclick="updateMap()">Update Map</button>
+                        </form>
+                        <div id="mineinfo-section" class="pt-5 mt-6" style="height: auto; text-align: center;"></div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tab-pane fade" id="mines" role="tabpanel" aria-labelledby="mines-tab">
+                <h2 class="text-center pb-4">Mine Controls</h2>
+                <div class="row">
+                    <!-- View All Mines (Left side) -->
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <button class="btn btn-warning" onclick="getMines()">View All Mines</button>
+                        <div id="mines-section1" class="mt-3" style="text-align: center;"></div>
+                    </div>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <form id="getMineForm" class="mt-3" style="width: 100%; text-align: center;">
+                            <input type="number" id="mineID" class="form-control mb-2" placeholder="Enter mine id" required>
+                            <button type="button" class="btn btn-info" onclick="getMineById()">View Specific Mine</button>
+                        </form>
+                        <div id="mines-section2" class="mt-3" style="text-align: center;"></div>
+                    </div>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <form id="addMineForm" class="mt-3" style="width: 100%; text-align: center;">
+                            <input type="text" id="serialNum" class="form-control mb-2" placeholder="Enter serial num" required>
+                            <input type="number" id="xAdd" class="form-control mb-2" placeholder="Enter x position" required>
+                            <input type="number" id="yAdd" class="form-control mb-2" placeholder="Enter y position" required>
+                            <button type="button" class="btn btn-success" onclick="addMine()">Add Mine</button>
+                        </form>
+                        <div id="mines-section3" class="mt-3" style="text-align: center;"></div>
+                    </div>
+                    <div class="col-md-3 d-flex flex-column align-items-center">
+                        <form id="deleteMineForm" class="mt-3" style="width: 100%; text-align: center;">
+                            <input type="number" id="mineIdToDelete" class="form-control mb-2" placeholder="Enter mine id" required>
+                            <button type="button" class="btn btn-danger" onclick="deleteMine()">Delete Mine</button>
+                        </form>
+                        <div id="mines-section4" class="mt-3" style="text-align: center;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="rovers" role="tabpanel" aria-labelledby="rovers-tab">
+                <h2 class="text-center pb-4">Rover Controls</h2>
+                <ul class="nav nav-tabs justify-content-center" id="roversTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="section1-tab" data-bs-toggle="tab" href="#section1" role="tab" aria-controls="section1" aria-selected="true">View All Rovers</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="section2-tab" data-bs-toggle="tab" href="#section2" role="tab" aria-controls="section2" aria-selected="false">View Specific Rover</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="section3-tab" data-bs-toggle="tab" href="#section3" role="tab" aria-controls="section3" aria-selected="false">Create Rover</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="section4-tab" data-bs-toggle="tab" href="#section4" role="tab" aria-controls="section4" aria-selected="false">Delete Rover</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="section5-tab" data-bs-toggle="tab" href="#section5" role="tab" aria-controls="section5" aria-selected="false">Dispatch Rover</a>
+                    </li>
+                </ul>
+                <div class="tab-content pt-4" id="roversTabsContent">
+                    <!-- Section 1: View All Rovers -->
+                    <div class="tab-pane fade show active" id="section1" role="tabpanel" aria-labelledby="section1-tab">
+                        <div class="row">
+                            <div class="col-md-12 d-flex flex-column align-items-center">
+                                <div class="row w-100">
+                                    <div class="col-md-6 d-flex justify-content-start mb-3">
+                                        <button class="btn btn-primary w-100" onclick="getRovers()">View All Rovers (Click to toggle)</button>
+                                    </div>
+                                    <div class="col-md-6 d-flex justify-content-end mb-3">
+                                        <button class="btn btn-warning w-100" onclick="resetRovers()">Reset Rovers</button>
+                                    </div>
+                                </div>
+                                <div id="rovers-section1" class="mt-3" style="text-align: center;">
+                                    <div id="roversCollapse" class="collapse"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+            
+                    <!-- Section 2: View Specific Rover -->
+                    <div class="tab-pane fade" id="section2" role="tabpanel" aria-labelledby="section2-tab">
+                        <div class="row">
+                            <div class="col-md-12 d-flex flex-column align-items-center">
+                                <form id="getRoverForm" class="mt-3" style="width: 20%; text-align: center;">
+                                    <input type="number" id="roverID" class="form-control mb-2" placeholder="Enter rover id" required>
+                                    <button class="btn btn-info mt-2" onclick="getRoverById(event)">View Specific Rover</button>
+                                </form>
+                                <div id="rovers-section2" class="mt-3" style="width: 80%; text-align: center;"></div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Section 3: Create Rover -->
+                    <div class="tab-pane fade" id="section3" role="tabpanel" aria-labelledby="section3-tab">
+                        <div class="row">
+                            <div class="col-md-12 d-flex flex-column align-items-center">
+                                <form id="createRoverForm" class="mt-3" style="width: 75%; text-align: center;">
+                                    <input type="text" id="roverCommands" class="form-control mb-2" placeholder="Enter rover commands" required>
+                                    <button type="button" class="btn btn-success" onclick="createRover()">Create Rover</button>
+                                </form>
+                                <div id="rovers-section3" class="mt-3" style="text-align: center;"></div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Section 4: Delete Rover -->
+                    <div class="tab-pane fade" id="section4" role="tabpanel" aria-labelledby="section4-tab">
+                        <div class="row">
+                            <div class="col-md-12 d-flex flex-column align-items-center">
+                                <form id="deleteRoverForm" class="mt-3" style="width: 20%; text-align: center;">
+                                    <input type="number" id="roverIdToDelete" class="form-control mb-2" placeholder="Enter rover id" required>
+                                    <button type="button" class="btn btn-danger" onclick="deleteRover()">Delete Rover</button>
+                                </form>
+                                <div id="rovers-section4" class="mt-3" style="text-align: center;"></div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Section 5: Dispatch Rover -->
+                    <div class="tab-pane fade" id="section5" role="tabpanel" aria-labelledby="section5-tab">
+                        <div class="row">
+                            <div class="col-md-8 d-flex flex-column align-items-center">
+                                <div class="col-md-6">
+                                    <form id="dispatchRoverForm" class="mt-3" style="width: 100%; text-align: center;">
+                                        <input type="number" id="roverIdToDispatch" class="form-control mb-2" placeholder="Enter Rover ID" required>
+                                        <button type="button" class="btn btn-warning" onclick="dispatchRover()">Dispatch Rover</button>
+                                    </form>
+                                </div>
+                                <div class="col-md-11">
+                                    <div id="rovers-section5" class="mt-3" style="text-align: center;"></div>
+                                    <div id="map-result" style="height: auto; text-align: center;"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-info mt-3" id="toggleLogsButton" onclick="toggleLogs()">Show Logs</button>
+                                <div id="logs-section" class="mt-3" style="display:none;">
+                                    <div id="logsContent"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="/static/js/operator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
